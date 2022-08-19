@@ -60,7 +60,7 @@ body {
     position: relative;
     top: 3.5rem;
     transition: box-shadow ease-in-out 0.4s;
- 
+    cursor: pointer;
 }
 
 .dice--button > button:hover  {
