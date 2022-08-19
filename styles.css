@@ -30,17 +30,18 @@ body {
     background-color: var(--dark-grayish-blue);
     border-radius: 1rem;
     text-align: center;
-    padding: 2.25rem 4rem;
+    padding: 2.25rem;
 }
 
 .container > p {
     color: var(--neon-green);
     margin-bottom: 1.5rem;
     letter-spacing: 0.3rem;
+    font-size: 0.65rem;
 }
 
 .container > h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-size: 28px;
     line-height: 2;
     letter-spacing: 0.2rem;
@@ -58,9 +59,19 @@ body {
     border-radius: 100%;
     position: relative;
     top: 3.5rem;
-    transition: background-color ease-in-out 0.4s;
+    transition: box-shadow ease-in-out 0.4s;
+ 
 }
 
-.dice--button > button:hover {
-    background-color: hsl(150, 49%, 39%);
+.dice--button > button:hover  {
+
+    box-shadow: 0 0 15px hsl(150, 90%, 70%); 
+}
+
+
+
+@media (min-width: 500px) {
+    .container {
+        max-width: 500px;
+    }
 }
